@@ -17,9 +17,11 @@ contract Errors {
         value += _increment;
     }
 
-    // Require statement
+    // Revert statement
     function resetValue() public {
-        require(value != 0, "Value must not be 0 to reset");
+        if (value == 0) {
+            revert("Value must not be 0 to reset");
+        }
         value = 0;
     }
 }
