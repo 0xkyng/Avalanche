@@ -1,8 +1,8 @@
-# MyMetaCrafterToken
+# AVAXToken
 
 ## Overview
 
-`AVAXToken` is an ERC-20 token named "MyMetaToken" with the symbol "MMT" built on the Ethereum blockchain. This token is designed to be easily minted and burned by the contract owner.
+`AVAXToken` is an ERC-20 token named "AVAXToken" with the symbol "AVT" built on the Ethereum blockchain. This token is designed to be easily minted and burned by the contract owner.
 
 ## Smart Contract Details
 
