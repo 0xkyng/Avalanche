@@ -3,23 +3,24 @@ pragma solidity ^0.8.19;
 
 
 contract Errors {
+    uint public value;
 
-    function uintRequire(uint _x) public pure {
-          require(_x > 0, "Number must be greater than 0");
+    // Require statement
+    function setValue(uint _value) public {
+        require(_value > 0, "Value must be greater than 0");
+        value = _value;
     }
 
+    // Assert statement
+    function incrementValue(uint _increment) public {
+        assert(value + _increment >= value);
+        value += _increment;
+    }
 
-
-    function uintAssert(uint _x) public pure {
-          assert(_x > 0);  
-      }
-
-
-
-    function uintRevert(uint _x, uint _y) public pure {
-          if (_x <= _y) {
-              revert("x must be greater than y");
-          }
-       }
+    // Require statement
+    function resetValue() public {
+        require(value != 0, "Value must not be 0 to reset");
+        value = 0;
+    }
 }
 
