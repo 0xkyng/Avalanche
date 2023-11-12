@@ -18,13 +18,13 @@
    - Initializes the ERC-20 token with the specified name and symbol.
    - Sets the contract deployer as the owner.
 
-2. **mint(address \_to, uint \_amount):**
+2. **mint(address \_holder, uint \_value):**
 
    - Mints new tokens and assigns them to the specified address.
    - Only the contract owner can call this function.
 
-3. **burn(uint \_amount):**
-   - Burns a specified amount of tokens from the caller's balance.
+3. **burn(uint \_value):**
+   - Burns a specified value of tokens from the caller's balance.
    - Ensures that the caller has a sufficient balance to burn.
 
 ## Interacting with the Contract
@@ -38,7 +38,7 @@ To use this contract, consider the following steps:
 
 1. **Deploy the Contract:**
 
-   - Deploy the `MyMetaCrafterToken` contract on the Ethereum blockchain.
+   - Deploy the `AVAXToken` contract on the Ethereum blockchain.
 
 2. **Mint Tokens:**
 
