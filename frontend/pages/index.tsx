@@ -26,6 +26,13 @@ const Home: NextPage = () => {
    <main className={styles.main}>
      <div className={styles.container}>
        <div className={styles.connect}>
+         {/* <ConnectWallet
+           switchToActiveChain={true}
+           dropdownPosition={{
+             side: "bottom",
+             align: "center",
+           }}
+         /> */}
        </div>
 
        <div className={styles.header}>
