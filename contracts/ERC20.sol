@@ -19,4 +19,8 @@ contract AVAXToken is ERC20 {
         require(balanceOf(msg.sender) >= _value, "Insufficient balance");
         _burn(msg.sender, _value);
     }
+
+    function transfer(address to, uint256 value) public virtual override returns (bool success) {
+        success = super.transfer(to, value);
+    }
 }
